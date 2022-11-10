@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.PlayerInfos">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:layout_editor_absoluteX="0dp" />
+    <TextView
+        android:id="@+id/LBL_CircuitValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="debutTour"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/LBL_Circuit"
+        app:layout_constraintStart_toEndOf="@+id/LBL_Circuit"
+        app:layout_constraintTop_toTopOf="@+id/LBL_Circuit" />
+
+    <TextView
+        android:id="@+id/LBL_DateAddedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dateAdded"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/LBL_DateAdded"
+        app:layout_constraintStart_toEndOf="@+id/LBL_DateAdded"
+        app:layout_constraintTop_toTopOf="@+id/LBL_DateAdded" />
+
+    <ImageView
+        android:id="@+id/IMG_Avatar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LBL_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="name"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/IMG_Avatar"
+        app:layout_constraintStart_toStartOf="@+id/IMG_Avatar"
+        app:layout_constraintTop_toBottomOf="@+id/IMG_Avatar" />
+
+    <TextView
+        android:id="@+id/LBL_SpecialSkill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Pouvoir spécial : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/LBL_Rarity"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Rarity" />
+
+    <TextView
+        android:id="@+id/LBL_Circuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Circuit : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/LBL_SpecialSkill"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_SpecialSkill" />
+
+    <TextView
+        android:id="@+id/LBL_Rarity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Rareté : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Name" />
+
+    <TextView
+        android:id="@+id/LBL_RarityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rarity"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/LBL_Rarity"
+        app:layout_constraintStart_toEndOf="@+id/LBL_Rarity"
+        app:layout_constraintTop_toTopOf="@+id/LBL_Rarity" />
+
+    <TextView
+        android:id="@+id/LBL_SpecialSkillValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="specialSkill"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/LBL_SpecialSkill"
+        app:layout_constraintStart_toEndOf="@+id/LBL_SpecialSkill"
+        app:layout_constraintTop_toTopOf="@+id/LBL_SpecialSkill" />
+
+    <TextView
+        android:id="@+id/LBL_DateAdded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Date d'ajout : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/LBL_Circuit"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Circuit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
